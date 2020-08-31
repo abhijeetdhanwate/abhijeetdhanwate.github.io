@@ -1,0 +1,66 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+a:active{
+	color: black;	
+}
+
+body{
+	background-color: rgb(0,0,0);
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #5d4954;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+	color: rgb(226, 226, 226);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	position: 
+}
+
+.nav-links a{
+	color: rgb(226, 226, 226);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+} 
+.nav-links li{
+	list-style: none;
+}
+
+ul li a:hover{
+	color: #112244;
+} 
+
+/*for CoderAbhii in nav-bar*/
+.index a{
+	text-decoration: none;
+	color: rgb(226, 226, 226); 
+
+	a:hover{
+	color: grey;
+}
+}
+
+
+
