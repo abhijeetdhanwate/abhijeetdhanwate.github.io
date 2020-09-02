@@ -4,29 +4,74 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Google font css -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/home/bodhi/Desktop/Portfolio/assets/style.css">
     <title>Home: codeAbhii</title>
   </head>
   
   <body>
     <!-- Let's build navigation bar-->
-    <nav>
+    <nav id="home" class="header">
       <div class="logo">
-        <h4 class="index"><a title="Goto to https://coderabhii.me/" href="#home"> coderAbhii </a></h4>
+        <h3 class="index"><a title="Goto to https://coderabhii.me/" href="index.html"> coderAbhii </a></h3>
       </div>
       
       <ul class="nav-links">
-        <li><a name="home" class="active" href="#">Home</li>
-        <li><a name="projects" href="#">Projects</li>
-        <li><a name="contact" href="#">Contact</li>
-        <li><a name="about" href="#">About</li>
+        <li><a name="home" class="active" href="#home">Home</a></li>
+        <li><a name="projects" href="#projects">Projects</a></li>
+        <li><a name="about" href="#about">About</a></li>
+        <li><a name="skills" href="#skills">Skills</a></li>
       </ul>
       
     </nav>
-    
-  </body>
+    <!--HOME SWEET HOME-->
+    <div>
+      <img src="assets/home.jpeg" class="homeImg">
+    </div>
+    <div class="homeName">
+      <p class="name">Abhijeet Dhanwate </p>
+      <p class="tagline">Always a Learner!</p>
+    </p>
+  </div>
+  <!--PEHCHAN KON-->
+  <div>
+    <h2 class="h2heads" id="about">about me</h2>
+    <p class="describe">
+      Hey, I am Abhijeet.. I am a programming enthusiast and love coding. <br>
+      I am a web developer and love to build websites and apps. <br>
+      I am of the opinion that programming is the thing next to magic.
+    </p>
+  </div>
+  <!--Projects-->
+  <div class="project">
+    <h2 class="h2heads" id="projects">projects</h2>
+    <div class="gallery">
+      <img src="assets/home.jpeg" alt="Portfolio website">
+      <p align="right">Hello</p>
+    </div>
+    <div class="gallery">
+      <img src="assets/home.jpeg" alt="Forest">
+    </div>
+    <div class="gallery">
+      <img src="assets/home.jpeg" alt="Northern Lights">
+    </div>
+    <div class="gallery">
+      <img src="assets/home.jpeg" alt="Mountains">
+    </div>
+  </div>
+  <!--FOOOOOOOOTER-->
+  <nav class="footer">
+    <div class="footerHead">
+      <h4>Contact me: </h4>
+    </div>
+    <ul class="nav-links">
+      <li><a class="contact" title="Lets's connect!" href="https://www.linkedin.com/in/abhijeet-dhanwate/" target="_blank">LinkedIn</a></li>
+      <li><a class="contact" title="Wanna check my projects" href="https://github.com/coderAbhii" target="_blank">Github</a></li>
+      <li><a class="contact" title="Drop me an Email" href="#">Email</a></li>
+      <li><a class="contact" title="Want a follow back ;)" href="https://www.instagram.com/they_call_me_abhii" target="_blank">Instagram</li>
+    </ul>
+  </nav>
+</body>
 </html>
