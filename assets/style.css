@@ -169,6 +169,10 @@ nav.footer > ul li a:hover{
 .contact{
 	padding: 3px;
 }
+footer img{
+	max-height: 32px;
+	max-width: 32px;
+}
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
 /*GAllery images Projects*/
@@ -282,7 +286,3 @@ nav.footer > ul li a:hover{
 	max-width: 100%;
 }
 
-footer img{
-	max-height: 32px;
-	max-width: 32px;
-}
