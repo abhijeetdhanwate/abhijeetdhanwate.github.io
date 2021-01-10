@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="673289455898-dg38bcstiari5fc8nkm062tput03i54n.apps.googleusercontent.com">
+    <title>Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body onload="enableDesignMode()">
+    <div class="menu">
+        <input type="text" class="doc-name" value="Untitled-Document"></input>
+    </div>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div class="icons">
+        <button onclick="execCmd('undo')"><i class="fa fa-undo" aria-hidden="" title="Undo"></i></button>
+        <button onclick="execCmd('redo')"><i class="fa fa-redo" aria-hidden="" title="Redo"></i></button>
+        <button onclick="execCmd('cut')"><i class="fa fa-cut" aria-hidden="" title="Cut"></i></button>
+        <button onclick="execCmd('copy')"><i class="fa fa-copy" aria-hidden="" title="Copy"></i></button>
+
+        <select name="fontSelector" id="fonts" onchange="execCmd('fontName', this.value)" title="Font">
+            <option value="Arial">Arial</option>
+            <option value="Courier Sans MS">Comic Sans MS</option>
+            <option value="Courier">Courier</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+        <select name="fontSizeSelector" id="font-size" onchange="execCmd('fontSize', this.value)" title="Font Size">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+        <select name="headingSelector" id="heading" onchange="execCmd('formatBlock', this.value)" title="Heading">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+        </select>
+
+        <button onclick="execCmd('bold')"><i class="fa fa-bold" aria-hidden="" title="Bold"></i></button>
+        <button onclick="execCmd('italic')"><i class="fa fa-italic" aria-hidden="" title="Italic"></i></button>
+        <button onclick="execCmd('underline')"><i class="fa fa-underline" aria-hidden="" title="Underline"></i></button>
+        <button onclick="execCmd('strikethrough')"><i class="fa fa-strikethrough" aria-hidden="" title="StrikeThrough"></i></button>
+        <button onclick="execCmd('subscript')"><i class="fa fa-subscript" aria-hidden="" title="Sub-Script"></i></button>
+        <button onclick="execCmd('superscript')"><i class="fa fa-superscript" aria-hidden="" title="Super-Script"></i></button>
+
+        <button onclick="execCmd('justifyLeft')"><i class="fa fa-align-left" aria-hidden="" title="Align Left"></i></button>
+        <button onclick="execCmd('justifyCenter')"><i class="fa fa-align-center" aria-hidden="" title="Align Center"></i></button>
+        <button onclick="execCmd('justifyRight')"><i class="fa fa-align-right" aria-hidden="" title="Align Right"></i></button>
+        <button onclick="execCmd('justifyFull')"><i class="fa fa-align-justify" aria-hidden="" title="Align Justify"></i></button>
+        <button onclick="execCmd('indent')"><i class="fa fa-indent" aria-hidden="" title="Indent"></i></button>
+        <button onclick="execCmd('outdent')"><i class="fa fa-outdent" aria-hidden="" title="Outdent"></i></button>
+        <button onclick="execCmd('insertUnorderedList')"><i class="fa fa-list-ul" aria-hidden="" title="UnOrdered List"></i></button>
+        <button onclick="execCmd('insertOrderedList')"><i class="fa fa-list-ol" aria-hidden="" title="Ordered List"></i></button>
+        <button onclick="execCmd('insertParagraph')"><i class="fa fa-paragraph" aria-hidden="" title="Paragraph"></i></button>
+        <button onclick="execCmd('createLink', prompt('Enter URL', 'https:/\/'))" title="Link"><i class="fa fa-link" aria-hidden=""></i></button>        
+        <button onclick="execCmd('unlink')"><i class="fa fa-unlink" aria-hidden="" title="Unlink"></i></button>
+        <button onclick="execCmd('bold')"><i class="fa fa-code" aria-hidden="" title="HTML"></i></button>
+        <!-- <button onclick=""><i class="fa fa-toggle" aria-hidden="">Toggle</i></button> -->
+        <!-- <button onclick="execCmd('insertImage', prompt('Enter image URL'))"><i class="fa fa-file-image-o" aria-hidden="">Image</i></button> -->
+        <button onclick="execCmd('selectAll')"><i class="fa fa" aria-hidden="" title="Select All">Select All</i></button>
+    </div>
+    <iframe name="editor"></iframe>
+    <script src="main.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
