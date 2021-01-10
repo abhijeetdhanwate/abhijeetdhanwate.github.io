@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-signin-client_id" content="673289455898-dg38bcstiari5fc8nkm062tput03i54n.apps.googleusercontent.com">
-    <title>Editor</title>
+    <title>TextEditorJS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,7 +13,6 @@
     <div class="menu">
         <input type="text" class="doc-name" value="Untitled-Document"></input>
     </div>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <div class="icons">
         <button onclick="execCmd('undo')"><i class="fa fa-undo" aria-hidden="" title="Undo"></i></button>
         <button onclick="execCmd('redo')"><i class="fa fa-redo" aria-hidden="" title="Redo"></i></button>
@@ -73,6 +71,5 @@
     </div>
     <iframe name="editor"></iframe>
     <script src="main.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
